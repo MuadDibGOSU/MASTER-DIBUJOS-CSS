@@ -1,0 +1,551 @@
+/*:root {
+      --ball-width: 340px;
+}
+
+body {
+      overflow-x: hidden;
+}
+
+.layout {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+
+}
+
+.layout__container {
+
+      position: relative;
+      width: 900px;
+      height: 600px;
+      overflow: hidden;
+      border: 10px solid rgb(163, 163, 163);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+
+
+}
+
+
+
+.layout__img {
+
+
+
+      display: none;
+      position: absolute;
+      width: 400px;
+      border: 1px solid rgb(74, 145, 101);
+      opacity: 0.7;
+      z-index: 3;
+}
+
+.layout__head {
+      position: absolute;
+      top: 50px;
+      left: 252px;
+      width: 367px;
+      height: 422px;
+      background-color: #81B72B;
+      border-radius: 50% 50% 57% 49% / 64% 65% 35% 37%;
+      z-index: 10;
+
+}
+
+
+.head__eye {
+
+      position: absolute;
+
+      top: 7%;
+      left: 23%;
+      width: 200px;
+      height: 200px;
+
+      background: white;
+
+      border: 5px solid #75a626;
+      border-radius: 100%;
+}
+
+.eye__iris {
+      position: absolute;
+      top: 41px;
+      left: 34px;
+      width: 122px;
+      height: 122px;
+      border: 5px solid black;
+      border-radius: 100%;
+      background: linear-gradient(to top, #0BC5C4 0%, #1A5C88 100%)
+}
+
+.eye_pupila {
+      position: absolute;
+      top: 9px;
+      left: 13px;
+      width: 85px;
+      height: 85px;
+      border-radius: 100%;
+      border: 10px solid black;
+      background-color: black;
+
+
+}
+
+.eye__reflex {
+      position: absolute;
+      top: 18px;
+      left: 11px;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      border: 10px solid white;
+      background-color: black;
+      z-index: 3;
+      opacity: 0.8;
+}
+
+.head__mouth {
+      position: absolute;
+      top: 299px;
+      left: 98px;
+      width: 172px;
+      height: 75px;
+      background: linear-gradient(to bottom, black 0%, black 60%, #98994b 71%, #98994b 100%);
+
+      border-radius: 50%;
+      overflow: hidden;
+
+
+}
+
+.mouth__teeth {
+      position: absolute;
+      left: 20px;
+      top: 57px;
+      width: 40px;
+      height: 78px;
+      border-radius: 50%;
+      background: #FEFFFF;
+}
+
+.mouth__teeth-one {
+      position: absolute;
+      left: 20px;
+      top: 57px;
+
+}
+
+.mouth__teeth-two {
+      position: absolute;
+      left: 51px;
+      top: 60px;
+}
+
+.mouth__teeth-three {
+      position: absolute;
+      left: 82px;
+      top: 60px;
+}
+
+.mouth__teeth-four {
+      position: absolute;
+      left: 113px;
+      top: 60px;
+}
+
+.layout__horn-left{
+      position: absolute;
+      top: -5px;
+      left: 82px;
+      width: 31px;
+      height: 48px;
+      background-color: #9ea173;
+      border-radius: 50%;
+      transform: rotate(30deg);
+      z-index:1;
+      
+}
+
+
+.layout__horn-left::before{
+      content: "";
+      background: white;
+      position: absolute;
+      left: 11px;
+            top: -3px;
+      width: 20px;
+      height: 25px;
+      border-radius: 50%;
+      z-index: 2;
+}
+
+
+.layout__horn-right{
+      position: absolute;
+            top: -5px;
+            left: 252px;
+            width: 31px;
+            height: 48px;
+            background-color: #9ea173;
+            border-radius: 50%;
+            transform: rotate(160deg);
+      
+}*/
+
+/* Reset CSS */
+
+/* wasonski prueba 1
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+}
+
+.layout {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.layout__container {
+      position: relative;
+      width: 400px;
+      height: 500px;
+      background: linear-gradient(135deg, #8BC34A 0%, #689F38 100%);
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+}
+
+.layout__img {
+      display: none;
+      /* Ocultamos la imagen ya que vamos a crear todo con CSS */
+
+/*
+.layout__head {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+/* Ojo principal 
+.head__eye {
+      position: relative;
+      width: 180px;
+      height: 180px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      margin-bottom: 40px;
+      border: 8px solid #e0e0e0;
+}
+
+.eye__iris {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      background: radial-gradient(circle, #00BCD4 0%, #0097A7 50%, #006064 100%);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.eye_pupila {
+      width: 60px;
+      height: 60px;
+      background-color: #000;
+      border-radius: 50%;
+      position: absolute;
+}
+
+.eye__reflex {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background-color: white;
+      border-radius: 50%;
+      top: 20px;
+      left: 30px;
+      box-shadow: 5px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Boca */
+/*
+.head__mouth {
+      position: relative;
+      width: 120px;
+      height: 40px;
+      background-color: #000;
+      border-radius: 60px 60px 60px 60px / 30px 30px 60px 60px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      padding: 5px 10px;
+      margin-top: 20px;
+}
+
+.mouth__teeth {
+      width: 12px;
+      height: 15px;
+      background-color: white;
+      border-radius: 2px 2px 8px 8px;
+      margin: 0 2px;
+}
+
+.mouth__teeth-one {
+      height: 12px;
+}
+
+.mouth__teeth-two {
+      height: 15px;
+}
+
+.mouth__teeth-three {
+      height: 13px;
+}
+
+.mouth__teeth-four {
+      height: 10px;
+}
+
+/* Cuernos */
+/*
+.layout__horn-left,
+.layout__horn-right {
+      position: absolute;
+      width: 15px;
+      height: 35px;
+      background: linear-gradient(45deg, #7CB342 0%, #558B2F 100%);
+      border-radius: 50% 50% 0 0;
+      top: 30px;
+}
+
+.layout__horn-left {
+      left: 120px;
+      transform: rotate(-15deg);
+      border-radius: 0 50% 0 0;
+}
+
+.layout__horn-right {
+      right: 120px;
+      transform: rotate(15deg);
+      border-radius: 50% 0 0 0;
+}
+
+/* Efectos adicionales *//*
+.layout__container::before {
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 80px;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      filter: blur(20px);
+}
+
+.layout__container::after {
+      content: '';
+      position: absolute;
+      bottom: 80px;
+      right: 60px;
+      width: 40px;
+      height: 40px;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      filter: blur(10px);
+}
+
+/* Animación opcional *//*
+.head__eye {
+      animation: blink 4s infinite;
+}
+
+@keyframes blink {
+
+      0%,
+      90%,
+      100% {
+            transform: scaleY(1);
+      }
+
+      95% {
+            transform: scaleY(0.1);
+      }
+}
+
+/* Hover effect *//*
+.layout__container:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+}
+
+.layout__container:hover .eye__iris {
+      animation: eyeMove 2s infinite alternate;
+}
+
+@keyframes eyeMove {
+      0% {
+            transform: translateX(0);
+      }
+
+      100% {
+            transform: translateX(10px);
+      }
+}  */
+
+
+
+/*wasonkis prueba 2*/
+
+
+/* === Layout base === */
+body {
+      background-color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+}
+
+.layout__container {
+      position: relative;
+      width: 300px;
+      height: 380px;
+      background-color: #76c043;
+      border-radius: 50% / 45%;
+}
+
+/* === Ojo === */
+.head__eye {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 140px;
+      height: 140px;
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.eye__iris {
+      width: 80px;
+      height: 80px;
+      background: radial-gradient(circle at 30% 30%, #00bfff, #0074cc);
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.eye__reflex {
+      width: 15px;
+      height: 15px;
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+}
+
+.eye_pupila {
+      width: 30px;
+      height: 30px;
+      background-color: black;
+      border-radius: 50%;
+      z-index: 1;
+}
+
+/* === Boca === */
+.head__mouth {
+      position: absolute;
+      bottom: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 160px;
+      height: 70px;
+      background-color: #000;
+      border-radius: 0 0 80px 80px;
+      overflow: hidden;
+}
+
+/* === Dientes === */
+.mouth__teeth {
+      position: absolute;
+      bottom: 0;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      border-radius: 50%;
+}
+
+.mouth__teeth-one {
+      left: 20px;
+}
+
+.mouth__teeth-two {
+      left: 50px;
+}
+
+.mouth__teeth-three {
+      left: 80px;
+}
+
+.mouth__teeth-four {
+      left: 110px;
+}
+
+/* === Cuernos === */
+.layout__horn-left,
+.layout__horn-right {
+      position: absolute;
+      top: 10px;
+      width: 30px;
+      height: 40px;
+      background-color: #aaa;
+      border-radius: 50%;
+      transform: rotate(-30deg);
+}
+
+.layout__horn-left {
+      left: 40px;
+      transform: rotate(-40deg);
+}
+
+.layout__horn-right {
+      right: 40px;
+      transform: rotate(40deg);
+}

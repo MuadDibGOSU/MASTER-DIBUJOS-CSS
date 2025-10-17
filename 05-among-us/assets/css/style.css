@@ -1,0 +1,47 @@
+:root {
+      --ball-width: 340px;
+}
+
+body {
+      overflow-x: hidden;
+}
+
+.layout {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+
+}
+
+.layout__container {
+
+      position: relative;
+      width: 900px;
+      height: 600px;
+      overflow: hidden;
+      border: 10px solid rgb(163, 163, 163);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+
+
+}
+
+
+
+.layout__img {
+
+
+
+      display: block;
+      position: absolute;
+      width: 400px;
+      border: 1px solid rgb(74, 145, 101);
+      opacity: 0.5;
+      z-index: 3;
+}
