@@ -100,9 +100,22 @@ body {
 .body__foot-left{
   position:absolute;
   top: 359px;
-  left: -24px;
+  left: -25px;
   height: 130px;
   width: 140px;
+  background-color: #780a39;
+  border: 25px solid black;
+  border-top: 25px solid transparent;
+  border-radius: 0% 0% 45% 35% ;
+}
+
+
+.body__foot-right{
+  position:absolute;
+  top: 330px;
+  left: 155px;
+  height: 130px;
+  width: 120px;
   background-color: #780a39;
   border: 25px solid black;
   border-top: 25px solid transparent;
