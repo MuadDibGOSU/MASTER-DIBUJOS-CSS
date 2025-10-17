@@ -153,3 +153,32 @@ body {
   border-radius: 100%;
 
 }
+
+.layout__backpack{
+  position:absolute;
+
+  top: 167px;
+  left: 227px;  
+
+  height: 275px;
+  width: 120px;
+  border: 25px solid black;
+  border-right: 0px solid transparent;
+  border-radius: 40%;
+
+  background-color: #780a39;
+  z-index: -1;
+  overflow: hidden;
+
+}
+
+.layout__backpack::before{
+  content:"";
+  position: absolute;
+  width: 75px;
+  height: 45px;
+  border-radius: 47%;
+  background-color: #BF1601;
+  z-index: -3;
+  
+}
