@@ -26,7 +26,7 @@ body {
 }
 
 .layout__img {
-  display: block;
+  display: blockx;
   position: absolute;
   width: 400px;
   border: 1px solid rgb(74, 145, 101);
@@ -46,4 +46,18 @@ body {
   border: 25px solid black;
   border-bottom: 25px solid transparent;
   border-radius: 30% 45% 2% 0% / 36% 36% 47%  0%;
+}
+
+.layout__body::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 23px;
+  
+  width: 218px;
+  height: 317px;
+  background-color: #9C101D;
+  
+  border-radius: 25% 55% 25% 35% / 35% 35% 35% 50%;
+  
 }
