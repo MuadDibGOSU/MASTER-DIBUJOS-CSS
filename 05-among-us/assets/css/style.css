@@ -26,7 +26,7 @@ body {
 }
 
 .layout__img {
-  display: blockx;
+  display: none;
   position: absolute;
   width: 400px;
   border: 1px solid rgb(74, 145, 101);
@@ -60,4 +60,16 @@ body {
   
   border-radius: 25% 55% 25% 35% / 35% 35% 35% 50%;
   
+}
+
+            .body__glasses{
+            position:absolute;
+            width:220px;
+            height:165px;
+            border: 20px solid black;
+            border-radius: 28% 43% 46% 40% ;
+            background: #97c6da;
+            top: 45px;
+            left: 70px;
+
 }
