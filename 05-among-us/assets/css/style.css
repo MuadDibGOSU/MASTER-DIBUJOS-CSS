@@ -45,7 +45,7 @@ body {
   background-color: #780a39;
   border: 25px solid black;
   border-bottom: 25px solid transparent;
-  border-radius: 30% 45% 2% 0% / 36% 36% 47%  0%;
+  border-radius: 30% 45% 2% 0% / 36% 36% 47% 0%;
 }
 
 .layout__body::before {
@@ -53,23 +53,46 @@ body {
   position: absolute;
   top: 2px;
   left: 23px;
-  
+
   width: 218px;
   height: 317px;
-  background-color: #9C101D;
-  
+  background-color: #9c101d;
+
   border-radius: 25% 55% 25% 35% / 35% 35% 35% 50%;
-  
 }
 
-            .body__glasses{
-            position:absolute;
-            width:220px;
-            height:165px;
-            border: 20px solid black;
-            border-radius: 28% 43% 46% 40% ;
-            background: #97c6da;
-            top: 45px;
-            left: 70px;
+.body__glasses {
+  position: absolute;
+  width: 230px;
+  height: 165px;
+  border: 25px solid black;
+  border-radius: 49% 50% 51% 42% / 30% 49% 37% 45%;
+  background: #49646f;
+  top: 45px;
+  left: 61px;
+  overflow: hidden;
+}
 
+.body__glasses::before {
+  content: "";
+  position: absolute;
+  left: 36px;
+  top: -7px;
+  width: 159px;
+  height: 82px;
+  border-radius: 12% 9% 65% 110%;
+  background: #97c6da;
+  transform: rotate(-5deg);
+}
+
+.body__glasses::after {
+  content: "";
+  position: absolute;
+  width: 87px;
+  height: 34px;
+  left: 84px;
+  top: 11px;
+  border-radius: 58% 51% 36% 33%;
+  background: white;
+  transform: rotate(5deg);
 }
