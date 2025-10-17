@@ -1,47 +1,49 @@
 :root {
-      --ball-width: 340px;
+  --ball-width: 340px;
 }
 
 body {
-      overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .layout {
-      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-      height: 100vh;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .layout__container {
-
-      position: relative;
-      width: 900px;
-      height: 600px;
-      overflow: hidden;
-      border: 10px solid rgb(163, 163, 163);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-
-
-
+  position: relative;
+  width: 900px;
+  height: 600px;
+  overflow: hidden;
+  border: 10px solid rgb(163, 163, 163);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
 .layout__img {
+  display: block;
+  position: absolute;
+  width: 400px;
+  border: 1px solid rgb(74, 145, 101);
+  opacity: 0.5;
+  z-index: 3;
+}
 
+/**ESTILOS AMONG US  */
 
-
-      display: block;
-      position: absolute;
-      width: 400px;
-      border: 1px solid rgb(74, 145, 101);
-      opacity: 0.5;
-      z-index: 3;
+.layout__body {
+  position: absolute;
+  top: 34px;
+  left: 305px;
+  width: 302px;
+  height: 397px;
+  background-color: #780a39;
+  border: 25px solid black;
+  border-bottom: 25px solid transparent;
+  border-radius: 30% 45% 2% 0% / 36% 36% 47%  0%;
 }
